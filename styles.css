@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+    margin: 0px;
+}
+
+.wrapper {
+    opacity: 0.5;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+.header__body {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    padding: 8px 0px 8px 10px;
+}
+.header__logo img {
+height: 50px;
+}
+.nav__link {
+    display: inline-flex;
+    font-size: 22px;
+}
+.nav__link li {
+    list-style: none;
+}
+.nav__link a {
+    padding-right: 40px;
+    color: seashell;
+}
+
+.container {
+    margin: 70px auto 0px;
+    max-width: 1200px;
+    max-height: 700px;
+}
+
+.banner__section {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+    height: 700px;
+}
+.background {
+    width: 100%;
+}
+.mission {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: black;
+}
+
+.container__bt {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.bt__row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.bt__title {
+    text-align: center;
+    /*font-size: 24px;*/
+}
+.bt__element {
+    margin:10px 10px;
+}
+
+.el__img img {
+    height: 200px;
+}
+.el__text {
+    text-align: center;
+    margin-top: 10px;
+/*    font-size: 24px;
+    font-weight: 600;
+*/    
+}
+
+.vertical__loc {
+    padding: 30px 0px;   
+}
+
+.container__loc {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.locations_title {
+    text-align: center;
+/*    font-size: 48px;
+    font-weight: 600; */
+    opacity: 1;
+    padding:100px 0px 0px 0px;
+    margin: 15px auto;
+}
+.locations__row {
+    width: 100%;
+    height: 500px;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.vertical__col {
+    flex: 0 0 300px;
+}
+.vertical_item {
+    opacity: 1;
+    height: 200px;
+    background-color: black;
+    color: seashell;
+    margin: 0px 40px 40px 0px;
+    padding: 10px 5px;
+
+}
+.vertical__subitle {
+/*    font-size: 28px;
+    font-weight: 600; */
+    text-align: center;
+    margin: 20px auto;
+}
+.vertical__label {
+/*    font-size: 24px;
+    font-weight: 200; */
+    text-align: center;
+    margin: 30px auto;
+}
+.vertical__text {
+/*    font-size: 24px;
+    font-weight: 200; */
+    text-align: center;
+    margin: 30px auto;
+}
+
+.contact__inf {
+    height: 200px;
+    text-align: center;
+}
+.contact_title {
+/*    font-size: 48px;
+    font-weight: 600; 
+    padding-bottom: 30px;
+*/
+}
+.contact__mail {
+/*    font-size: 18px; */
+    padding-bottom: 20px;
+}
+
+.contact__mail a {
+    color: seashell;
+}
+
+.contact_tel {
+/*    font-size: 24px; */
+}
+
+.footer__row {
+    justify-content: left;
+    align-items: flex-end;
+    display: flex;
+    height: 69px;
+}
+.footer__text {
+    font-size: 16px;
+    margin: 0px 0px 0px 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 616px) and (min-width: 320px) {
+    .header__row {
+        display: block;
+        text-align: center;
+
+        }
+    .nav__link {
+        display: block;
+    }
+
+    .header__body {
+        height: 200px;
+        border-bottom: 1px solid seashell;
+    }
+
+    .nav__link li {
+        margin-top: 5px;
+    }
+
+    .locations_title {
+        padding-top: 10px;
+    }
+
+    .container__loc {
+        height: 800px;
+    }
+
+    .vertical_item {
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width: 920px) and (min-width: 617px) {
+    .container__loc {
+        height: 600px;
+    }
+    .vertical_item {
+        margin: 10px 5px;
+    }
+    .locations_title {
+        padding-top: 10px;
+    }
+}
